@@ -1,0 +1,145 @@
+.card {
+	background-color: $card-background-color;
+	border-top: 2px solid $main-color;
+	border-bottom: 2px solid $main-color;
+	border-radius: 4px;
+	box-shadow: 0px 20px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
+	margin-bottom: 70px;
+
+	a {
+		color: $link-color;
+
+		&:hover {
+			color: $link-hover-color;
+		}
+	}
+
+  	.header h3 {
+		font-size: 1.8em;
+		font-weight: bold;
+		margin-bottom: 35px;
+		padding: 0 45px;
+	}
+	  
+	.content {
+		text-align: justify;
+
+		img {
+			width: 100%;
+		}
+
+		p {
+			padding: 0 45px;
+		}
+	}
+
+	.read-more {
+		text-align: center;
+		padding: 6px 20px;
+		border: 2px solid $main-color;
+		border-radius: 50px;
+		font-style: italic;
+		margin: 0 auto 15px auto;
+		width: 90px;
+		animation: pulse 2s infinite;
+
+		&:hover, &:active {
+			background: $main-color;
+			color: #FFF;
+			transition: all .2s linear;
+			cursor: pointer;
+
+			a {
+				color: #FFF;
+			}
+		}
+
+		a {
+			text-decoration: none;
+
+			&:hover {
+				color: #FFF;
+			}
+		}
+	}
+
+  	.footer {
+		padding: 25px 45px 25px 45px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.skill {
+			border: 2px solid $main-color;
+			border-radius: 6px;
+			padding: 6px;
+			margin: 2px;
+			font-size: .9em;
+			
+			/* Disable selection */
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.card .header h3 {
+		font-size: 1.2em;
+		margin-bottom: 25px;
+		padding: 0 25px;
+	}
+
+	.card .content {
+		p {
+			padding: 0 25px;
+			font-size: 0.8em;
+		}
+	}
+
+	.card .footer {
+		padding: 0 25px 10px 25px;
+	}
+
+	.card .footer a {
+		float: none;
+	}
+
+	.card .footer .skill {
+		font-size: 0.65em;
+	}
+
+	.card .read-more {
+		padding: 6px 10px;
+		font-size: 0.75em;
+	}
+}
+
+@-webkit-keyframes pulse {
+	0% {
+	  -webkit-box-shadow: 0 0 0 0 rgba(236,129,169, 0.7);
+	}
+	70% {
+		-webkit-box-shadow: 0 0 0 10px rgba(236,129,169, 0);
+	}
+	100% {
+		-webkit-box-shadow: 0 0 0 0 rgba(236,129,169, 0);
+	}
+  }
+  @keyframes pulse {
+	0% {
+	  -moz-box-shadow: 0 0 0 0 rgba(236,129,169, 0.7);
+	  box-shadow: 0 0 0 0 rgba(236,129,169, 0.7);
+	}
+	70% {
+		-moz-box-shadow: 0 0 0 10px rgba(236,129,169, 0);
+		box-shadow: 0 0 0 10px rgba(236,129,169, 0);
+	}
+	100% {
+		-moz-box-shadow: 0 0 0 0 rgba(236,129,169, 0);
+		box-shadow: 0 0 0 0 rgba(236,129,169, 0);
+	}
+}
