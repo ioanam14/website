@@ -41,7 +41,8 @@
 			<img :src="getBannerPath('blog.jpg')">
 
 			<p>
-				This is a website where a user can create an account, make a post, see others' posts and comment on posts.
+				This is a website where a user can create an account, make a post, see others' posts and comment on posts. You can find the 
+				repo <a href="https://github.com/ioanam14/blog">here</a>.
 			</p>
 		</Project>
 
