@@ -19,6 +19,22 @@
 		
 		<div id="projects" class="section">Projects</div>
 
+		<Project title="Programare cu rabdare" 
+				 :showReadMore="false"
+				 :technologies="['Java', 'Teaching', 'Interview']" >
+				 
+			<img :src="getBannerPath('programare.jpg')">
+
+			<p>
+				Pe 16 februarie 2019 am participat la cercul de informatica <a href="http://programarecurabdare.ro/">Programare cu rabdare</a> din Bacau unde le-am vorbit participantilor despre experienta mea la Google si am rezolvat impreuna probleme de interviu.
+			</p>
+
+			<p> 
+				Puteti gasi rezolvarea problemelor <a href="https://github.com/ioanam14/interview_questions.git">aici</a> si prezentarea <a href="https://drive.google.com/open?id=1B8nym90tVxXE1COirkoYHq8q30F5SyXV">aici</a>.
+			</p>
+
+		</Project>
+
 		<Project title="Google Internship" 
 				 :showReadMore="true" 
 				 readMoreLink="https://codette.ro/blog/step-internship-software-engineer-google-london/">
